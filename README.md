@@ -20,6 +20,9 @@ This repository documents a learner's journey — from complete nomad to humble 
 
 ---
 
+
+## Project Structure
+
 html-css-practice/
 │
 ├── README.md
@@ -64,4 +67,3 @@ Each folder is one topic. Every project starts with an `index.html` (the page) a
 
 Not just to learn syntax — but to build with excellence, humility, and purpose.
 
-## Project Structure
