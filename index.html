@@ -3,182 +3,108 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Favorite Recipe</title>
+        <title>Profile Card</title>
         <style>
             body {
-                background-color:#3C2D2E;
+                background-color: #f0f2f5;
                 font-family: Arial, sans-serif;
-                color: #DBC8B6;
-                line-height: 1.1;
-            }
-            .header {
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                background-color: #DBC8B6;
-                color: #331100;
-                padding: 15px;
-                margin-bottom: 25px;
+                min-height: 100vh;
+                margin: 0;
             }
-            .header h1 {
-                padding-top: 12px;
-                text-transform: uppercase;
-                margin-top: 12px;
+               .profile-card {
+                background-color: white;
+                width: 300px;
+                height: 340px;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0  8px 12px rgba(0,0,0,0.1);
+                text-align: center;
+            }
+            .profile-card h2 {
+                margin: 0 0 5px;
+                color: #1a3a5c;
+            }
+            .avatar {
+                width: 80px;
+                height: 80px;
+                background-color: #1a3a5c;
+                color: white;
+                font-size: 28px;
                 font-weight: bold;
-            }
-            .header p {
-                padding-bottom: 12px;
-                margin-top: 2px;
-                margin-bottom: 2px;
-                color: #331100;
-                font-weight: bold;
-                font-style: italic;
-                text-transform: lowercase;
-            }
-            .ingredient h2 {
+                border-radius: 50%;
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
-                font-family: 'Great Vibes', cursive;
-                font-weight: bold;
-                text-decoration: underline;
-                text-transform: capitalize;
-                padding: 2px;
-                margin: 2px;
+                margin: 0 auto 15px;
             }
-            .ingredient {
+            .role {
+                color: gray;
+                font-size: 14px;
+                margin: 0 0 15px;
+            }
+            .bio {
+                color: #333;
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+            .stats {
+                display: flex;
+                justify-content: space-around;
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                padding: 15px 0;
+                margin-bottom: 20px;
+            }
+            .stat {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                background-color: #DBC8B6;
-                color: #331100;
-                padding: 10px;
-                margin-top: 0px;
+                align-items: center;
             }
-            .ingredient ul, li {
-                display: block;
-                font-family:sans-serif;
-                text-transform: uppercase;
+            .number {
+                font-size: 20px;
+                font-weight: bold;
+                color: #1a3a5c;
+            }
+            .label {
+                font-size: 12px;
+                color: gray;
+            }
+            .btn {
+                display: inline-block;
+                background-color: #1a3a5c;
+                color: white;
+                padding: 10px 25px;
                 text-decoration: none;
-                line-height: 1.7;
+                border-radius: 5px;
                 font-weight: bold;
-                
-            }
-            .instructions {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                padding-top: 15px;
-                margin-top: 25px;
-                background-color: #DBC8B6;
-                color: #331100;
-                line-height: 1.6;
-           }
-           .instructions h2 {
-            font-family: 'Great Vibe', cursive;
-            text-decoration: underline;
-            text-transform: capitalize;
-            padding: 2px;
-            margin: 2px;
-           }
-           .instructions ol, li {
-            font-weight: bold;
-            font-family: sans-serif;
-            line-height: 1.9;
-            text-transform: capitalize;
-           }
-           .preparation {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;    
-            padding: 15px;
-            margin-top: 15px;
-            background-color: #DBC8B6;
-            color:#331100;
-           }
-           .preparation h2 {
-            font-family: 'Great Vibes', cursive;
-            text-decoration: underline;
-            padding: 15px;
-            margin: 10px;
-           }
-           .preparation table {
-            border: 2px solid black;
-            padding: 10px;
-            margin: 15px;
-           }
-           .preparation tr th {
-            border: 2px solid black;
-            border-radius: 2px;
-            text-align: center;
-            text-decoration: none;
-            text-transform: capitalize;
-            font-size: large;
-            font-weight: bold;
-           }
-           
-            .footer {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: #DBC8B6;
-                color:#331100;
-                padding: 35px;
-                margin-top: 25px;
             }
         </style>
     </head>
     <body>
-        <header class="header">
-            <h1>Chocolate Cake with Honey</h1>
-            <p><q>recipe of delicious Chocolate cake with honey</q></p>
-        </header>
-        <main>
-            <section class="ingredient">
-            <h2><q>Ingredients List</q></h2>
-            <ul>
-                <li>Raw Chocolate</li>
-                <li>Raw Honey</li>
-                <li>Wheat flour and eggs</li>
-                <li>Salt</li>
-                <li>Cream</li>
-            </ul>
-            </section>
-            <section class="instructions">
-                <h2><q>Instructions</q></h2>
-                <ol>
-                    <li>Mix Wheat flour and eggs with some water until fluffy</li>
-                    <li>Pour honey on top with a pinch of salt </li>
-                    <li>Mix all Ingredients, rest it for 2 hours</li>
-                    <li>Mix cream and choclate, &amp; bake it until fluffy and decorate it.</li>
-                </ol>
-             </section>
-            <section class="preparation">
-                <h2>Preparation Time</h2>
-                <table>
-                    <thead>
-                            <tr>
-                                <th>Prep</th>
-                                <th>Cook</th>
-                                <th>Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td> 10 minutes with 2 hour resting</td>
-                            <td> 25 minutes at 30 degree Celsius</td>
-                            <td> Cook time 155 minutes</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </main>
-        <footer class="footer">
-            <p>&copy; 2026 copyright reserved</p>
-        </footer>
+        <div class="profile-card">
+            <div class="avatar">SP</div>
+            <h2>Sadiq Pasha</h2>
+            <p class="role">Web Developer in Training</p>
+            <p class="bio">Learning HTML, CSS, and design - one drill at a time.</p> 
+            <div class="stats">
+                <div class="stat">
+                    <span class="number">7</span>
+                    <span class="label">CSS Topics</span>
+                </div>
+                <div class="stat">
+                    <span class="number">3</span>
+                    <span class="label">Builds</span>
+                </div>
+                <div class="stat">
+                    <span class="number">1</span>
+                    <span class="label">Live Site</span>
+                </div>
+            </div>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
     </body>
 </html>
