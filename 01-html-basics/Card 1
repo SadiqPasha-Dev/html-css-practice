@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hajira's Profile</title>
+        <style>
+            body {
+                background-color: #FFD7D7;
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            .profile-card {
+            background-color: #B66878;
+            width: 300px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            }
+            .profile-card h2 {
+                margin: 0 0 5px;
+                color: #f2d9d6;
+            }
+            .avatar {
+                width: 80px;
+                height: 80px;
+                background-color: #f2d9d6;
+                color: #B66878;
+                font-size: 28px;
+                font-weight: bold;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto 15px;
+            }
+            .role {
+                color:#f2d9d6;
+                font-size: 14px;
+                margin: 0 0 15px;
+            }
+            .bio {
+                color: #F2DCE0;
+                font-style:italic;
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+            .stats {
+                display: flex;
+                justify-content: space-evenly;
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                padding: 15px 0px;
+                margin-bottom: 20px;
+            }
+            .stat {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .number {
+                font-size: 20px;
+                font-weight: none;
+                text-transform: lowercase;
+                color: #F7E5EC;
+            }
+            .label {
+                font-size: 12px;
+                color: #BDBCC4;
+                text-transform: capitalize;
+            }
+            .btn {
+                display: inline-block;
+                background-color: #f2d9d6;
+                color: #B66878;
+                padding: 10px 25px;
+                text-decoration: none;  
+                border-radius: 5px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="profile-card">
+        <div class="avatar">HJ</div>
+            <h2>Hajira</h2>
+            <p class="role">Home Life Specialist</p>
+            <p class="bio"><q>A house is made of walls and beams; a home is built with love and dreams</q></p> 
+            <div class="stats">
+                <div class="stat">
+                    <span class="number">Hobbies</span>
+                    <span class="label">Explorer | Cook</span>
+                </div>
+                <div class="stat">
+                    <span class="number">Ethos</span>
+                    <span class="label">Spiritual</span>
+                </div>
+                <div class="stat">
+                    <span class="number">Persona</span>
+                    <span class="label">Kind | Sweet</span>
+                </div>
+                <div class="stat">
+                    <span class="number">Craft</span>
+                    <span class="label">Dressmaking</span>
+                </div>
+            </div>
+            <a href="#reception" class="btn">Reception</a>
+        </div>
+    </body>
+</html>
