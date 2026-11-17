@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Profile Card</title>
+        <title>Hajira's Profile</title>
         <style>
             body {
-                background-color: #f0f2f5;
+                background-color: #FFD7D7;
                 font-family: Arial, sans-serif;
                 display: flex;
                 justify-content: center;
@@ -14,24 +14,23 @@
                 min-height: 100vh;
                 margin: 0;
             }
-               .profile-card {
-                background-color: white;
-                width: 300px;
-                height: 340px;
-                padding: 30px;
-                border-radius: 12px;
-                box-shadow: 0  8px 12px rgba(0,0,0,0.1);
-                text-align: center;
+            .profile-card {
+            background-color: #B66878;
+            width: 300px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            text-align: center;
             }
             .profile-card h2 {
                 margin: 0 0 5px;
-                color: #1a3a5c;
+                color: #f2d9d6;
             }
             .avatar {
                 width: 80px;
                 height: 80px;
-                background-color: #1a3a5c;
-                color: white;
+                background-color: #f2d9d6;
+                color: #B66878;
                 font-size: 28px;
                 font-weight: bold;
                 border-radius: 50%;
@@ -41,22 +40,22 @@
                 margin: 0 auto 15px;
             }
             .role {
-                color: gray;
+                color:#f2d9d6;
                 font-size: 14px;
                 margin: 0 0 15px;
             }
             .bio {
-                color: #333;
-                font-size: 14px;
+                color: #F2DCE0;
+                font-style:italic;
                 line-height: 1.5;
                 margin-bottom: 20px;
             }
             .stats {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 border-top: 1px solid #ddd;
                 border-bottom: 1px solid #ddd;
-                padding: 15px 0;
+                padding: 15px 0px;
                 margin-bottom: 20px;
             }
             .stat {
@@ -66,19 +65,21 @@
             }
             .number {
                 font-size: 20px;
-                font-weight: bold;
-                color: #1a3a5c;
+                font-weight: none;
+                text-transform: lowercase;
+                color: #F7E5EC;
             }
             .label {
                 font-size: 12px;
-                color: gray;
+                color: #BDBCC4;
+                text-transform: capitalize;
             }
             .btn {
                 display: inline-block;
-                background-color: #1a3a5c;
-                color: white;
+                background-color: #f2d9d6;
+                color: #B66878;
                 padding: 10px 25px;
-                text-decoration: none;
+                text-decoration: none;  
                 border-radius: 5px;
                 font-weight: bold;
             }
@@ -86,25 +87,29 @@
     </head>
     <body>
         <div class="profile-card">
-            <div class="avatar">SP</div>
-            <h2>Sadiq Pasha</h2>
-            <p class="role">Web Developer in Training</p>
-            <p class="bio">Learning HTML, CSS, and design - one drill at a time.</p> 
+        <div class="avatar">HJ</div>
+            <h2>Hajira</h2>
+            <p class="role">Home Life Specialist</p>
+            <p class="bio"><q>A house is made of walls and beams; a home is built with love and dreams</q></p> 
             <div class="stats">
                 <div class="stat">
-                    <span class="number">7</span>
-                    <span class="label">CSS Topics</span>
+                    <span class="number">Hobbies</span>
+                    <span class="label">Explorer | Cook</span>
                 </div>
                 <div class="stat">
-                    <span class="number">3</span>
-                    <span class="label">Builds</span>
+                    <span class="number">Ethos</span>
+                    <span class="label">Spiritual</span>
                 </div>
                 <div class="stat">
-                    <span class="number">1</span>
-                    <span class="label">Live Site</span>
+                    <span class="number">Persona</span>
+                    <span class="label">Kind | Sweet</span>
+                </div>
+                <div class="stat">
+                    <span class="number">Craft</span>
+                    <span class="label">Dressmaking</span>
                 </div>
             </div>
-            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#reception" class="btn">Reception</a>
         </div>
     </body>
 </html>
