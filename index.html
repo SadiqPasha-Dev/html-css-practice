@@ -1,115 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
+    <!DOCTYPE html>
+    <html lang="en"> 
+        <head>
+            <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hajira's Profile</title>
-        <style>
-            body {
-                background-color: #FFD7D7;
-                font-family: Arial, sans-serif;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-                margin: 0;
-            }
-            .profile-card {
-            background-color: #B66878;
-            width: 300px;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-            text-align: center;
-            }
-            .profile-card h2 {
-                margin: 0 0 5px;
-                color: #f2d9d6;
-            }
-            .avatar {
-                width: 80px;
-                height: 80px;
-                background-color: #f2d9d6;
-                color: #B66878;
-                font-size: 28px;
-                font-weight: bold;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 0 auto 15px;
-            }
-            .role {
-                color:#f2d9d6;
-                font-size: 14px;
-                margin: 0 0 15px;
-            }
-            .bio {
-                color: #F2DCE0;
-                font-style:italic;
-                line-height: 1.5;
-                margin-bottom: 20px;
-            }
-            .stats {
-                display: flex;
-                justify-content: space-evenly;
-                border-top: 1px solid #ddd;
-                border-bottom: 1px solid #ddd;
-                padding: 15px 0px;
-                margin-bottom: 20px;
-            }
-            .stat {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .number {
-                font-size: 20px;
-                font-weight: none;
-                text-transform: lowercase;
-                color: #F7E5EC;
-            }
-            .label {
-                font-size: 12px;
-                color: #BDBCC4;
-                text-transform: capitalize;
-            }
-            .btn {
-                display: inline-block;
-                background-color: #f2d9d6;
-                color: #B66878;
-                padding: 10px 25px;
-                text-decoration: none;  
-                border-radius: 5px;
-                font-weight: bold;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="profile-card">
-        <div class="avatar">HJ</div>
-            <h2>Hajira</h2>
-            <p class="role">Home Life Specialist</p>
-            <p class="bio"><q>A house is made of walls and beams; a home is built with love and dreams</q></p> 
-            <div class="stats">
-                <div class="stat">
-                    <span class="number">Hobbies</span>
-                    <span class="label">Explorer | Cook</span>
-                </div>
-                <div class="stat">
-                    <span class="number">Ethos</span>
-                    <span class="label">Spiritual</span>
-                </div>
-                <div class="stat">
-                    <span class="number">Persona</span>
-                    <span class="label">Kind | Sweet</span>
-                </div>
-                <div class="stat">
-                    <span class="number">Craft</span>
-                    <span class="label">Dressmaking</span>
+        <title>The Elegance of Haya | Modest Fashion & Styling</title>
+        <meta name="description" content="Discover The Elegance of Haya where Islamic modesty meets modern fashion, refined styling, noble presence, dignity, and timeless elegance.">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="The Elegance of Haya">
+        <meta name="theme-color" content="#1A1A1A">
+        <link rel="icon" type="image/png" href="Image/logo/scissor.png">
+        <link rel="stylesheet" href="css/style.css">
+            <style>
+                body {
+                    background-color: #ECF2F0;
+                    font-family: Arial, sans-serif;
+                    line-height: 1.6;
+                    padding:0px;
+                    margin: 0px;
+                }
+                header {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: #F6F5F1;
+                    padding: 0px;
+                    margin: 0px;
+                }
+                nav ul li a:hover {
+                    color: #DFE8E3;
+                }
+                h1 {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    font-weight: bold;
+                    color: #54278F;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+                }
+                h1 img {
+                    width: 50px;
+                    height: auto;
+                }
+                nav ul {
+                    display: flex;
+                    gap: 25px;
+                    list-style: none;
+                    padding: 0px;
+                }
+                ul li a {
+                    text-decoration: none;
+                    color: #54278F;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+                }
+                .hero {
+                    position: relative;
+                    width: 100%;
+                    height: 620px;
+                }
+                .hero img {
+                    display: block; 
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .banner:hover {
+                    color: white;
+                }
+                .banner {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    display: flex;
+                    gap: 30px;
+                    font-weight: bold;
+                    color: #F6F5F1;
+                    font-size: 2rem;
+                    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <h1>
+                     <img src="Image/logo/scissor.png" type="image/png" alt="No Logo">
+                     THE ELEGANCE OF haya<span lang="ar" dir="rt1">حياء</span>
+                </h1>                
+                <nav>
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="hero">
+                    <img src="Image/Photos/home image.jpg" alt="No image">
+                <div class="banner">
+                    <figcaption>
+                    <h2>Refined Presence</h2>
+                    <p lang="ar" dir="rtl">حضور راقٍ</p>
+                    </figcaption>
                 </div>
             </div>
-            <a href="#reception" class="btn">Grow Positive</a>
-        </div>
-    </body>
-</html>
+                <section class="primary">
+                    <h2>Cascading Style Sheets.</h2>
+                    <p>CSS = presentation make the heading navy, make the paragraph 18px.</p>
+                </section>
+                <section>
+                    <article>
+                        <header>
+                            <h2></h2>
+                        </header>
+                        <footer>
+                        </footer>
+                    </article>
+                </section>
+                <section>
+                <table>
+                    <thead>
+                        <tr>
+                        <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </section>
+            </main>
+            <footer role="contentinfo">
+            </footer>
+        </body>
+    </html>
